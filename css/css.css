@@ -1,0 +1,690 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.gridPadre{
+    display: grid;
+    grid-template:
+    "header header" 650px
+    "section section" auto
+    "footer footer" auto;
+}
+.gridPadreReferentes{
+    display: grid;
+    grid-template:
+    "header header" auto
+    "articleR articleR" auto
+    "sectionR sectionR" auto
+    "footer footer" auto;
+}
+.articleR{
+    grid-area: articleR;
+    text-align: center;
+    background-image: url(../imagenes/plate-4725349.jpg);
+    background-size: 100%;
+}
+.sectionR{
+    grid-area: sectionR;
+    background-image: url(../imagenes/floor-1256804.jpg);
+    background-size: 1500px;
+}
+.header{
+    grid-area: header;
+    background-color: #091926;
+}
+.background1{
+    background-image: url("../imagenes/jazz-1658886.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 1200px;
+    height: 650px;
+    padding-top: 1px;
+}
+.section{
+    grid-area:section;
+}
+.footer{
+    grid-area:footer;
+}
+.logo{
+    position: absolute;
+    top: 25px;
+}
+.iconoHam{
+    display: none;
+}
+.navInput{
+    display: none;
+}
+.navDisplay{
+    display: grid;
+    grid-template-columns: auto auto auto auto 150px;
+    grid-template-rows: 100px;
+    justify-content: end;
+    align-items: center;
+}
+.navDisplay li{
+    list-style: none;
+}
+.navDisplay li a{
+    box-shadow: inset 0px 0 0 0 #091825;
+    color: #091825;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color 1s, box-shadow 1s;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    margin-right: 15px;
+    background-color:#FBF4A1;
+    color: black;
+    text-decoration:none;
+}
+.navDisplay li a:hover{
+    box-shadow: inset 150px 0 0 0 #091825;
+    color: white;
+}
+.navDisplay li:active{
+    padding-top: 1px;
+}
+.logo2{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 225px;
+}
+.logo2 img{
+    width: 450px;
+}
+.video{
+    padding-top: 50px;
+    height: auto;
+    width: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 900px;
+}
+.formularioVideo{
+    width: auto;
+    height:auto;
+    margin:auto;
+    text-align: center;
+    background-color: #091926b7;
+    color:#FBF4A1
+}
+.videoDia{
+    background-color:#091825;
+    text-align: center;
+}
+
+
+
+/*SECCION DEL FOOTER*/
+.colorfooter{
+    color:#FBF4A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 400px;
+    text-align: center;
+    padding-left: 5px;
+}
+.colorfooter form{
+    display: flex;
+    align-content: center;
+}
+.colorfooter form input{
+    width: 450px;
+    height: 35px;
+    background-color: black;
+    border:0;
+    text-align: center;
+}
+.colorfooter form button{
+    background-color:#fbf3a1;
+    border: 0;
+    color: black;
+
+}
+footer{
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,24,37,1) 50%, rgba(0,212,255,1) 100%);    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer h4{
+    font-family: 'Libre Bodoni';
+    font-size: x-large;   
+    text-shadow: 3px 3px 3px black; 
+}
+.footerRedesContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FBF4A1;
+    width: 180px;
+}
+.footerRedesContacto h4 div{
+    text-decoration: none;
+    color: black;
+
+}
+.patrocinadores{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#FBF4A1;
+    justify-content: space-around;
+}
+.patrocinadores div{
+    display:flex;
+    flex-direction: row;
+}
+.patrocinadores div img{
+    height: 50px;
+    width: 100px;
+}
+/*FIN DEL FOOTER*/
+/*TIENDA*/
+.backgroundTienda{
+    background-image: url(../tiendaCatalogo/willian-west-cVHCZTP8ldc-unsplash\ \(1\).jpg);
+}
+.promocionTienda{
+    display:flex;
+    flex-direction: row;
+    background-color: #000000;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 500px;
+}
+.promocionTienda div img{
+    width: 1350px;
+    position: relative;
+    top: -100px;
+}
+.imagenPromocion{
+    overflow: hidden;
+}
+.promocionTiendaTexto{
+    position: absolute;
+    top: 320.5px;
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    backdrop-filter: blur(2px);
+}
+.promocionTiendaTexto h2{
+    font-family: 'Source Sans Pro';
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.promocionTiendaTexto a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: .3s;
+    text-shadow: 5px 5px 2px black;
+}
+.promocionTiendaTexto a:hover{
+    border-color: grey;
+}
+.padreTienda{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: right;
+    align-content: center;
+}
+.catalogo{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #091926ad;
+}
+.problemasCompra{
+    height: auto;
+    text-align:center;
+    background-color: #091926ad;
+    color:#F2E4D8;
+    width: auto;
+}
+.imagenesTienda{
+    width: 200px;
+    height: auto;
+}
+.zonaDeCompra{
+    display:flex;
+}
+.separadorGeneralTienda{
+    display: flex;
+    flex-direction: column;
+}
+.articulosDeCompra{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.articulo{
+    width: 350px;
+    height: 180px;
+    border: 4px solid white;
+    background-color: #fbf3a169;
+    border-style: ridge;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: smaller;
+}
+.filtrosCompra{
+    background-color: #091926ad;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border: 5px solid grey;
+    max-height: 500px;
+    margin-top: 18px;
+    position: sticky;
+    top: 20px;
+    }
+.filtrosCompra a{
+    color: #fbf3a1;
+    text-decoration: none;
+    border: 2px solid grey;
+    border-radius:10px;
+    width: 150px;
+    text-align: center;
+    background-color: black;
+    transition: 0.5s;
+}
+.filtrosCompra a:hover{
+    border-radius: 0px;
+}
+.filtrosCompra h3{
+    color: white;
+}
+.articulo a{
+    background-color:#000000;
+	border-radius:5px;
+	border:2px solid grey;
+	display:inline-block;
+	cursor:pointer;
+	color:#fbf4a1;
+	font-family:Arial;
+	font-size:10px;
+	padding:8px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+    transition: 0.5s;
+}
+.articulo a:hover {
+	background-color:#091926;
+}
+.articulo a:active {
+	position:relative;
+	top:1px;
+}
+
+/*FIN DE LA TIENDA*/
+
+/*SECCION REFERENTES*/
+.referentesOrigenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #091926;
+    border-bottom: 4px solid #091926;
+    background-color: #fbf3a1a5;
+}
+.referentesOrigenes img{
+    height: 500px;
+    width: 500px;
+}
+.referentesOrigenes p{
+    color: black;
+}
+.musicos{
+    background-image: url(../imagenes/floor-1256804.jpg);
+    background-size: 1500px;
+}
+.musicosReferentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.musicosReferentesCarta{
+    background-color: #091926ad;
+    border: 4px solid #fbf3a1a5;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.musicosReferentesCarta img{
+    height: 200px;
+    display: flex;
+    border: 1px solid white;
+}
+.musicosReferentes a{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80px;
+    text-decoration: none;
+    background-color:#fbf3a1 ;
+    color: black;
+}
+/*FIN DE REFERENTES*/
+/*SECCION EVENTOS*/
+.eventosBackground{
+    background-image: url(../imagenes/floor-1256804.jpg);
+}
+.calendario{
+    display: flex;
+    flex-direction: column;
+}
+.seccionCalendario{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.seccionCalendario article{
+    width: 1000px;
+    height: auto;
+    background-color: gold;
+}
+.seccionCalendario div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.seccionCalendario div div{
+    width: 150px;
+    height: 150px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction:column;
+    text-align: end;
+    border: 1px solid black;
+
+}
+.agendaOcupada{
+    color: gold;
+    display: flex;
+}
+.agendaOcupada img{
+    width: 90px;
+    height: 90px;
+    align-self: center;
+}
+.agendaOcupada h5{
+    text-align: center;
+}
+/*FIN DE EVENTOS*/
+/*SECCION SOBRE-NOSOTROS*/
+.sobreNosotrosBackground{
+    background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
+}
+.sobreNosotros{
+    display: flex;
+    flex-direction:column;
+}
+.sobreNosotrosPrimera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.sobreNosotrosPrimera div{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    backdrop-filter: blur(10px);
+    background-color: rgba(187, 136, 69, 0.146);
+}
+.sobreNosotrosPrimera div video{
+    height: 400px;
+    width: 650px;
+    padding-right: 15px;
+    border: 0;
+}
+/*FIN SOBRE-NOSOTROS*/
+
+@media only screen and (max-width: 571px) {
+    .gridPadre{
+        display: grid;
+        grid-template:
+        "header header" 571px
+        "section section" auto
+        "footer footer" auto;
+    }
+    .navDisplay li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 0px;
+        padding-left: 5px;
+    }
+    .navDisplay{
+        display: none;
+        justify-content: center;
+        align-content: center;
+        background-color: #091926ad;
+    }
+    .navInput{
+        position: sticky;
+        top:40px;
+        left:300px;
+        display: none;
+    }
+    .navInput:checked + .navDisplay{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 50px;
+        border: 1px solid black;
+        background-color: black;
+    }
+    .navDisplay li a{
+        justify-self: center;
+        margin-right: 0px;
+    }
+    .menuResponsive label{
+        display: flex;
+        justify-content: end;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+    .header{
+        grid-area: header;
+        backdrop-filter: blur(1px);
+    }
+    .background1{
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 1200px;
+        height: 570px;
+        padding-top: 1px;
+    }
+    .logo2{
+        display: flex;
+        justify-content: center;
+        position:relative;
+        top: 225px;
+    }
+    .logo2 img{
+        width: auto;
+    }
+    .video{
+        padding-top: 50px;
+        height: auto;
+        width: auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video video{
+        height: auto;
+        width: 300px;
+        margin-bottom: 25px;
+    }
+    .formularioVideo{
+        width: 200px;
+    }
+    .colorfooter{
+        color:#FBF4A1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100px;
+        width: 320px;
+        text-align: center;
+        padding-left: 5px;
+    }
+    .colorfooter form{
+        display: flex;
+    }
+    .colorfooter form input{
+        width: 275px;
+        height: 40px;
+        background-color: black;
+        border:0;
+        text-align: center;
+    }
+    .colorfooter form button{
+        background-color:#fbf3a1;
+        border: 0;
+        color: black;
+    
+    }
+    footer{
+        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,24,37,1) 50%, rgba(0,212,255,1) 100%);    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer h4{
+        font-family: 'Libre Bodoni';
+        font-size: x-large;   
+        text-shadow: 3px 3px 3px black; 
+    }
+    .footerRedesContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FBF4A1;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    .footerRedesContacto h4 div{
+        text-decoration: none;
+        color: black;
+    
+    }
+    .patrocinadores{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color:#FBF4A1;
+        justify-content: space-around;
+    }
+    .patrocinadores div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .patrocinadores div img{
+        height: 50px;
+        width: 50px;
+    }
+    /*REFERENTES*/
+    .referentesOrigenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid #091926;
+        border-bottom: 4px solid #091926;
+        background-color: #fbf3a1a5;
+    }
+    .referentesOrigenes img{
+        height: auto;
+        width: 270px;
+
+    }
+    .referentesOrigenes p{
+        color: black;
+        font-size: x-small;
+    }
+    .gridPadreReferentes{
+        display: grid;
+        grid-template:
+        "header header" 113px
+        "articleR articleR" auto
+        "sectionR sectionR" auto
+        "footer footer" auto;
+    }
+    .sectionR h2{
+        text-align: center;
+    }
+    .musicosReferentes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .musicosReferentesCarta{
+        background-color: #091926ad;
+        border: 4px solid #fbf3a1a5;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .musicosReferentesCarta img{
+        height: 100px;
+        display: flex;
+        border: 1px solid white;
+    }
+    .musicosReferentes a{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 80px;
+        text-decoration: none;
+        background-color:#fbf3a1 ;
+        color: black;
+    }
+}   
